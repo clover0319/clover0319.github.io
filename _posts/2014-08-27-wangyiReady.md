@@ -39,7 +39,36 @@ Java实现运行时多态性的基础是动态方法调度，它是一种在运�
 2）可以避免java中的单继承的限制<br>
 3）增加程序的健壮性，代码可以被多个线程共享，代码和数据独立。<br>
 
-5. xx
+5. String StringBuffer StringBuilder 的区别<br>
+String 字符串常量，不可变<br>
+StringBuffer 字符串变量，线程安全<br>
+StringBuilder 字符串变量，线程不安全，单线程中使用<br>
+
+6. Session和cookie<br>
+Cookie通过在客户端记录信息确定用户身份，Session通过在服务器端记录信息确定用户身份。<br>
+Web应用程序是使用HTTP协议传输数据的。HTTP协议是无状态的协议。一旦数据交换完毕，客户端与服务器端的连接就会关闭，再次交换数据需要建立新的连接。这就意味着服务器无法从连接上跟踪会话。Cookie就是这样的一种机制。它可以弥补HTTP协议无状态的不足。<br>
+Session是另一种记录客户状态的机制，不同的是Cookie保存在客户端浏览器中，而Session保存在服务器上。客户端浏览器访问服务器的时候，服务器把客户端信息以某种形式记录在服务器上。这就是Session。客户端浏览器再次访问时只需要从该Session中查找该客户的状态就可以了。<br>
+如果说Cookie机制是通过检查客户身上的“通行证”来确定客户身份的话，那么Session机制就是通过检查服务器上的“客户明细表”来确认客户身份。Session相当于程序在服务器上建立的一份客户档案，客户来访的时候只需要查询客户档案表就可以了。<br>
+
+7. Servlet的生命周期<br>
+初始化阶段  调用init()方法<br>
+响应客户请求阶段　　调用service()方法(doGet&&doPost)<br>
+终止阶段　　调用destroy()方法<br>
+一个实例可以服务于多个请求，并且其实例一般不会销毁。<br>
+
+8. Statement和preparedStatement<br>
+应该始终以PreparedStatement代替Statement，原因是：<br>
+代码的可读性和可维护性<br>
+PreparedStatement尽最大可能提高性能：每一种数据库都会尽最大努力对预编译语句提供最大的性能优化<br>
+极大地提高了安全性，防止SQL注入（or 1=1）<br>
+
+9. Redirect 和 forward<br>
+Redirect：URL重新定向，可以是任意的URL； 不能共享request里面的数据 ；一般用于用户注销登录时返回主页面和跳转到其它的网站等等<br>
+Forward：页面的转发，只能是同一个Web应用程序的其他Web组件；转发页面和转发到的页面可以共享request里面的数据；一般用于用户登录的时候根据角色转发到相应的模块等等。<br>
+
+10. Java 内存模型<br>
+
+11. JVM垃圾回收实现原理<br>
  
 
 
