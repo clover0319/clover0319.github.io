@@ -22,6 +22,7 @@ tags: [树]
 	（2）若它的右子树不为空，则右子树上所有节点的值都大于它的根节点的值；<br>
 	（3）其他的左右子树也分别为二叉查找树；<br>
 	（4）二叉查找树是动态查找表，在查找的过程中可见添加和删除相应的元素，在这些操作中需要保持二叉查找树的以上性质。<br>
+<!--break-->
     java代码:<br>
     `
 	public class BinarySearchTree<T extends Comparable<T>> {

@@ -14,6 +14,8 @@ tags: [计算机网络]
 * **当你输入一个网址的时候，实际会发生什么?**
 
 	[查看](http://www.cnblogs.com/wenanry/archive/2010/02/25/1673368.html)<br>
+<!--break-->
+
 * **OSI参考模型**
 
 	![Alt text](/image/OSI.png)

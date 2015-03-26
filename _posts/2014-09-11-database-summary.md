@@ -25,6 +25,7 @@ tags: [数据库]
 	一般满足前三个范式就可以避免数据冗余。<br>
 	4、 BC范式（BCNF）：关系模式R属于第一范式，且每个属性都不传递依赖于键码。即每个决定因素都包含码。<br>
 
+<!--break-->
 * **事务具有哪些特性？ACID**
 
     原子性(Atomicity）、一致性（Consistency）、隔离性（Isolation）、持久性（Durability）<br>
